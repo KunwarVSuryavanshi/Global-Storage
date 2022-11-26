@@ -36,7 +36,7 @@ function orderIceCream(payload = 1) {
 //---------------------- Reducer ----------------------------------
 
 const initialState = {
-  numOfCakes: 10
+  numOfCakes: 10                      // If there were nested states, then we would have to spread all of them or would have to use immer library
 }
 
 const cakeReducer = (state = initialState, action) => {
